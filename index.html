@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>music player</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/jquery.roundslider/1.0/roundslider.min.css"
+      rel="stylesheet"
+    />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="#" />
+  </head>
+  <body>
+    <section class="main-container">
+      <header class="head">
+        <button class="head-btn">Now Playing</button>
+      </header>
+      <div class="music">
+        <div class="header-line"></div>
+        <div class="music-image">
+          <div class="music__img"></div>
+          <span class="wave">
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+          </span>
+
+          <audio
+            src="/musics/enigma.mp3"
+            type="audio"
+            id="audio"
+            autoplay="true"
+          ></audio>
+        </div>
+        <!-- music name -->
+        <h2 class="music-name"></h2>
+        <p class="music-artist"></p>
+        <div class="progress-container">
+          <div class="progress" id="progress"></div>
+          <div class="music-time">
+            <span class="current-time"></span>
+            <span class="duration"></span>
+          </div>
+        </div>
+
+        <div class="control-button">
+          <button class="pre-btn"><i class="fa-solid fa-backward"></i></button>
+          <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+          <button class="next-btn"><i class="fa-solid fa-forward"></i></button>
+        </div>
+        <div class="music-player-footer">
+          <i class="fa-solid fa-heart" title="like"></i>
+          <i class="fa-solid fa-repeat" title="repeat"></i>
+          <i class="fa-solid fa-shuffle" title="random"></i>
+          <i class="fa-solid fa-volume-high" title="volume"></i>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.roundslider/1.0/roundslider.min.js"></script>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
